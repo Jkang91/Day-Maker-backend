@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # resources :users
   root "welcome#index"
 
+
   get "/users/:id", to: 'users#show'
   get '/users/:id/days', to: 'users#days'
   get "/me", to: "users#show"
